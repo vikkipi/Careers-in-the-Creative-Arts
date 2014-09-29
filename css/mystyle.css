@@ -6,6 +6,10 @@ body {
 	margin: 0 auto;
 }
 
+main {
+	padding: 2em;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
@@ -13,37 +17,43 @@ h1, h2, h3, h4, h5, h6 {
 
 .time {
 	font-style: italic;
-	margin-bottom: 40px;
+	margin-bottom: 2em;
 	font-weight: 400;
-	line-height: 40px;
+	line-height: 2em;
 }
 
 p {
-	padding-bottom: 20px;
+	padding-bottom: 1em;
+}
+
+h1 {
+	font-size: 2em;
 }
 
 h2 {
-	font-size: 35px;
-	padding-bottom: 40px;
+	font-size: 1.5em;
+	padding-bottom: 2em;
 }
 
 h4 {
-	padding-bottom: 30px;
-	font-size: 25px;
+	padding-bottom: 1.5em;
+	font-size: 1.3em;
 }
 
+.opening-hours-info {}
+
 .session {
-	padding-top: 40px;
+	padding-top: 2em;
 }
 
 .session h3 {
-	font-size: 20px;
-	padding-bottom: 20px;
+	font-size: 1em;
+	padding-bottom: 1em;
 }
 
 .session h4 {
 	font-style: italic;
-	padding-bottom: 20px;
+	padding-bottom: 1em;
 	font-weight: 400;
 }
 
@@ -52,23 +62,23 @@ h4 {
 }
 
 .room-num {
-	font-size: 14px;
+	font-size: 0.8em;
 }
 
 .session li {
-	padding-bottom: 20px;
+	padding-bottom: 1em;
 	list-style-type: none;
 }
 
 .opening-hours-info{
-	padding-top: 40px;
+	padding-top: 2em;
 }
 
 .closing-hours-info {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .lunch-info {
-	padding-top: 40px;
+	padding-top: 2em;
 }
