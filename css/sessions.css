@@ -1,0 +1,47 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 20px;
+	font-weight: 400;
+	width: 800px;
+	margin: 0 auto;
+}
+
+main {
+	padding: 2em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 1.5em;
+}
+
+p {
+	padding-bottom: 2em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+	/*padding-bottom: 2em;*/
+}
+
+h3 {
+	font-size: 1em;
+}
+
+h4 {
+	/*padding-bottom: 1.5em;*/
+	font-size: 1em;
+}
+
+.session h3 {
+	text-transform: uppercase;
+}
+
+.clear {
+	clear: both;
+} 
