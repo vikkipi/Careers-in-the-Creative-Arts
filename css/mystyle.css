@@ -2,17 +2,129 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 20px;
 	font-weight: 400;
-	width: 800px;
+	width: 100%;
 	margin: 0 auto;
 }
 
+/*NAVIGATION*/
+
+/* menu button */
+.menu a{
+margin:0.5em 0.625em; /*10/16 */
+background-color: #555;
+background-color: rgba(60,60,60,.6);
+border-radius:5px;
+color: #fff;
+text-decoration:none;
+}
+
+.menu a:hover{
+color:#555;
+background-color: #f90;
+}
+
+#main_nav{
+clear:both;
+}  
+
+#main_nav ul{
+list-style: none;
+}
+
+#main_nav li a{
+display:block;
+color:#fff;
+background-color: #555;
+text-transform: uppercase;
+padding: 0.625em; /* 10/16 */
+text-decoration:none;
+border-bottom: 1px solid #eee;
+font-weight:900;
+}
+
+#main_nav li a:hover{
+ color:#555;
+background-color: #fff;
+}
+
+#main_nav li a:active{
+color:#555;
+background-color: #f90;
+}  
+
+@media only screen and (min-width:42.75em) {
+    /* hide the menu button */
+.menu{
+    display:none;
+}
+
+/* move main_nav to top of the screen */
+#main_nav{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    background-color: #555;
+}
+
+#main_nav li{
+    display:inline;
+    line-height:1em;
+    border-bottom: none;
+}
+#main_nav li a{
+    float:left;
+    padding: 0.9375em; /* 10/16  and  15/16 */
+    border-bottom: none;
+}
+
+/* hide the link to top in the nav */
+#main_nav li a.top{
+    display: none;
+}
+
+/* move the rest of the page down accordingly */
+.container{
+margin-top: 3.75em;  /*60 / 16 */ 
+}
+
+} /* end min-width:42.75em */
+
+
+header {
+    background-color: #454545;
+}
+
+header h1 {
+color: #fff;
+padding: 1em;
+    padding-top: 2em;
+text-align: center
+}
+
+footer {
+text-align: center;
+color: #fff;
+}
+
+footer p {
+padding-top: 1em;
+}
+
+footer {
+    background-color: #454545;
+}
+
 main {
-	padding: 2em;
+padding: 1em;
 }
 
 
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+    padding-bottom: 1em;
 }
 
 .time {
@@ -32,15 +144,13 @@ h1 {
 
 h2 {
 	font-size: 1.5em;
-	padding-bottom: 2em;
 }
 
 h4 {
 	padding-bottom: 1.5em;
-	font-size: 1.3em;
+    font-size: 1.2em;
 }
 
-.opening-hours-info {}
 
 .session {
 	padding-top: 2em;
@@ -52,6 +162,7 @@ h4 {
 }
 
 .session h4 {
+    font-size: 1em;
 	font-style: italic;
 	padding-bottom: 1em;
 	font-weight: 400;
@@ -68,17 +179,4 @@ h4 {
 .session li {
 	padding-bottom: 1em;
 	list-style-type: none;
-}
-
-.opening-hours-info{
-	padding-top: 2em;
-}
-
-.closing-hours-info {
-	padding-top: 2em;
-	padding-bottom: 2em;
-}
-
-.lunch-info {
-	padding-top: 2em;
 }
