@@ -1,0 +1,15 @@
+h3 {
+	color: #fff;
+	background-color: #3F3D73;
+	padding: 0.5em;
+	text-align: center;
+}
+
+.opening-remarks {
+	text-align: center;
+}
+
+.session li img {
+	float: left;
+	padding-right: 1em;
+}

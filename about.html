@@ -9,8 +9,9 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-        <link rel="stylesheet" href="about.css">
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/about.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 
     </head>
     <body>
@@ -40,17 +41,17 @@
 
 	<div class="date-time">
 		<h2>DATE AND TIME</h2>
-		<p>Friday, June 14, 2014</p>
-		<p>8:30am - 4:30pm</p>
+		<p class="date">Friday, June 14, 2014</p>
+		<p class="time">8:30am - 4:30pm</p>
 	</div>
 
 
 
 	<div class="address">
 		<h2>LOCATION</h2>
-		<p>Borough of Manhattan Community College</p>
-		<p>199 Chambers Street </p>
-		<p>New York, NY 10007</p>
+		<p>Borough of Manhattan Community College</br>
+		199 Chambers Street </br>
+		New York, NY 10007</p>
 	</div>
 
 	<div class="announcement">
@@ -61,8 +62,7 @@
 
 
     <div class="map">
-       <img src="images/map.png" alt="map"/>
-       <p>MAP</p>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6047.9636565991295!2d-74.00880532469843!3d40.71841652650232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x69339e9ddf4f987a!2sBorough+of+Manhattan+Community+College!5e0!3m2!1sen!2sus!4v1414432139945" width="600" height="400" frameborder="0" style="border:0"></iframe>
     </div>   
 	<!-- show a map here, picture is OK for midterm, must be embedded Google Map or other for final. Delete this line -->
 
@@ -70,58 +70,68 @@
 
 
 	<div class="directions">
+
 		<h2>DIRECTIONS</h2>
 		
         <section class="subway-dirrections">
     		<h3>By Subway </h3>
     		<p>You can get to BMCC by taking any one of the following lines:</p>
-    
-    		<p>A, C, E to Chambers Street 
-    		Walk 3 Blocks West on Chambers Street</p>
-    
-    		<p>1, 2, or 3 to Chambers Street 
-    		Walk 2 Blocks West on Chambers Street</p>
-    
-    		<p>R to City Hall
+            <ul class="directions-block">
+            <li class="direction-a">A, C, E to Chambers Street<br>
+    		Walk 3 Blocks West on Chambers Street</li>
+
+    		<li class="direction-b">1, 2, or 3 to Chambers Street<br>
+    		Walk 2 Blocks West on Chambers Street</li>
+
+    		<li class="direction-c">R to City Hall
     		N to City Hall
-    		J, M to Chambers Street
-    		Walk 6 Blocks West on Chambers Street</p>
+    		J, M to Chambers Street<br>
+    		Walk 6 Blocks West on Chambers Street</li>
+            </ul>
     
-    		<p><span>Check the MTA's web site for the latest information.</span></p>
+    		<p class="check-info">Check the MTA's web site for the latest information.</p>
 		</section>
 
         <section class="bus-dirrections">
+
     		<h3>By Bus</h3>
-    		<p>M-22 from Grand Street and Madison Street</p> 
-    		<p>Walk 4 Blocks West</p>
+            <ul class="directions-block">
+    		<li class="direction-a">M-22 from Grand Street and Madison Street</br> 
+    		Walk 4 Blocks West</li>
+            </ul>
     
-    		<p><span>Check the MTA's web site for the latest information.</span></p>
+    		<p class="check-info">Check the MTA's web site for the latest information.</p>
+            </ul>
     	</section>
     
         <section class="path-dirrections">
     		<h3>By PATH</h3>
-    		<p>Path Train to World Trade Center</p>
-    		<p>Walk North 4 blocks on Greenwich St.
-    		Turn left at Chambers Street, entrance is on the right.</p>
-    
-    		<p>Path Train to Christopher Street</p>
-    		<p>Walk East 2 Blocks
-    		Take the 1 Downtown from Christopher Street/Sheridan Square station to Chambers Street. 
-    		Walk 2 Blocks West on Chambers Street</p>
+            <ul class="directions-block">
+    		<li class="direction-a"><span>Path Train to World Trade Center</span></br>
+    		Walk North 4 blocks on Greenwich St.</br>
+    		Turn left at Chambers Street, entrance is on the right.</li>
+            
+    		<li class="direction-b"><span>Path Train to Christopher Street</span></br>
+    		Walk East 2 Blocks</br>
+    		Take the 1 Downtown from Christopher Street/Sheridan Square station to Chambers Street. </br>
+    		Walk 2 Blocks West on Chambers Street</li>
+            </ul>
     	</section>
     
         <section class="car-dirrections">
     		<h3>By Car</h3>
-    
-    		<p>Driving From East Side Highway:</p>
-    		<p>East River Drive all the way around the southern tip of Manhattan,
-    		Through Underpass Straight to West Street, 
-    		Turn Right on Chambers Street</p>
-    
-    		<p>Driving From West Side Highway:</p>
-    		<p>East River Drive all the way around the southern tip of Manhattan,
-    		Through Underpass Straight to West Street, 
-    		Turn Right on Chambers Street</p>
+            <ul class="directions-block">
+    		<li class="direction-a"><span>Driving From East Side Highway</span></br>
+
+    		East River Drive all the way around the southern tip of Manhattan,</br>
+    		Through Underpass Straight to West Street,</br>
+    		Turn Right on Chambers Street</li>
+            
+    		<li class="direction-b"><span>Driving From West Side Highway</span></br>
+    		East River Drive all the way around the southern tip of Manhattan,</br>
+    		Through Underpass Straight to West Street,</br>
+    		Turn Right on Chambers Street</li>
+            </ul>
     	</section>
 
 	</div>
@@ -133,7 +143,7 @@
             <a name="main_nav"></a> 
                 <nav id="main_nav" >
                   <ul>
-                      <li><a href="home.html">Home</a></li>
+                      <li><a href="index.html">Home</a></li>
                       <li><a href="about.html">About</a></li>
                       <li><a href="schedule.html">Schedule</a></li>
                       <li><a href="sessions.html">Sessions</a></li>
