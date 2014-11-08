@@ -1,11 +1,11 @@
 main {
-	padding: 2em;
+	padding: 1em;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Francois One', sans-serif;
-	padding-bottom: 1.5em;
+	/*padding-bottom: 1.5em;*/
 }
 
 p {
@@ -45,3 +45,17 @@ h4 {
 .session {
 	padding-bottom: 1em;
 }
+
+.session a {
+	color: #04BFBF;
+}
+
+.track h2 {
+	color: #fff;
+	background-color: #3F3D73;
+	padding: 0.5em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+

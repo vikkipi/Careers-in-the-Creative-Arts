@@ -1,25 +1,36 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Lato', sans-serif;*/
 	line-height: 20px;
 	font-weight: 400;
 	width: 100%;
 	margin: 0 auto;
 }
 
+.logo img{
+	width: 80%;
+	height: 80%;
+}
+
+.logo {
+	text-align: center;
+	padding: 1em;
+}
+
 /*NAVIGATION*/
 
 /* menu button */
 .menu a{
-margin:0.5em 0.625em; /*10/16 */
-background-color: #555;
-background-color: rgba(60,60,60,.6);
-border-radius:5px;
-color: #fff;
-text-decoration:none;
+margin:0.5em 0.625em;
+/*background-color: #555;*/
+/*background-color: rgba(60,60,60,.6);*/
+/*border-radius:5px;*/
+/*color: #fff;*/
+/*text-decoration:none;*/
 }
 
 .menu a:hover{
-color: #6F0AB6;
+color: #04BFBF;
 /*background-color: #f90;*/
 }
 
@@ -36,9 +47,9 @@ display:block;
 color:#fff;
 background-color: #555;
 text-transform: uppercase;
-padding: 0.625em; /* 10/16 */
+padding: 0.625em; 
 text-decoration:none;
-border-bottom: 1px solid #eee;
+border-bottom: 1px solid #3F3D73;
 font-weight:900;
 }
 
@@ -48,8 +59,8 @@ background-color: #fff;
 }
 
 #main_nav li a:active{
-color:#555;
-background-color: #f90;
+color:#04BFBF;
+background-color: #fff;
 }  
 
 @media only screen and (min-width:42.75em) {
@@ -99,6 +110,7 @@ header {
 header h1 {
 color: #fff;
 padding: 1em;
+font-size: 1.8em;
     padding-top: 2em;
 text-align: center
 }
@@ -110,6 +122,10 @@ color: #fff;
 
 footer p {
 padding-top: 1em;
+}
+
+.footer-info {
+	padding-bottom: 1em;
 }
 
 footer {
@@ -126,6 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Francois One', sans-serif;
     padding-bottom: 0.5em;
     text-align: center;
+    color: #262626;
 }
 
 .time {
@@ -195,4 +212,37 @@ margin-bottom: 1em;
 
 .map {
 	text-align: center;
+}
+
+.my-info {
+	padding: 1em;
+}
+
+.my-info-image {
+	float: left;
+	width: 150px;
+	margin-right: 1em;
+}
+
+.clear {
+	clear: both;
+}
+
+.my-info-description a {
+	color: #04BFBF;
+}
+
+.workshop-tracks img{
+	/*width: 100px;*/
+	padding-right: 1em;
+	float: left;
+}
+
+.featured-speakers h2{
+	padding-bottom: 1em;
+}
+
+.opening-remarks-line {
+	text-align: center;
+	padding-bottom: 1em;
 }
