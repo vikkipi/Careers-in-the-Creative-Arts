@@ -4,33 +4,37 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>About</title>
+                <script src="js/modernizr.js"></script>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-        <link rel="stylesheet" href="css/about.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-
     </head>
-    <body>
+    <body id="about">
+        
         <a name="top"></a>
 
-      
-        
         <header>
-        
-    
             <div class="logo"><img src="images/logo@2x.png" alt="logo"></div>
+            
+            
+      
             <div class="menu">
-                <a href="#main_nav"><img src="images/hamburger.png" alt="hamburger menu"></a>
+                <a href="#" id="menu_button"><img src="images/hamburger.png" alt="hamburger menu"></a>
             </div>
-        
+      
+            <nav id="main_nav" >
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="schedule.html">Schedule</a></li>
+                  <li><a href="sessions.html">Sessions</a></li>
+                  <li><a href="speakers.html">Speakers</a></li>
+                  <li><a href="videos.html">Videos</a></li>
+              </ul>
+            </nav> 
         </header>
+
   <main>
-	<div class="about-info">
+	<div class="about-info about-conf">
 		<h2>ABOUT THE CONFERENCE</h2>
 		<p>The path to becoming a creative professional is not an easy one and even the path itself is hard to find. Careers in the Creative Arts is designed to inform educate and inspire students who are thinking about going down that path. It is free and open to all current and prospective students at BMCC.</p>
 
@@ -39,7 +43,7 @@
 		<p>The event is organized into four tracks that represent four broad creative fields: <a href="sessions.html#creative-writing-track">Creative Writing</a>, <a href="sessions.html#fine-arts-track">Fine Arts</a>, <a href="sessions.html#performing-arts-track">Performing Arts</a>, <a href="sessions.html#media-arts-track">Media Arts</a>. There will be four sessions in each track with lunch provided after the first two sessions. You can attend the sessions you're interested in whether they are all in one track or across tracks.</p>
 	</div>
 
-    <div class="note">
+    <div class="note about-conf">
     	<div class="date-time">
     		<h2>DATE AND TIME</h2>
     		<p class="date">Friday, June 14, 2014</p>
@@ -61,7 +65,7 @@
 
 
 
-    <div class="map">
+    <div class="map clear">
        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6047.9636565991295!2d-74.00880532469843!3d40.71841652650232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x69339e9ddf4f987a!2sBorough+of+Manhattan+Community+College!5e0!3m2!1sen!2sus!4v1414432139945" width="600" height="400" style="border:0"></iframe>
     </div>   
 	<!-- show a map here, picture is OK for midterm, must be embedded Google Map or other for final. Delete this line -->
@@ -69,11 +73,11 @@
 
 
 
-	<div class="directions">
+	<div class="directionsBlock">
 
 		<h2>DIRECTIONS</h2>
 		
-        <section class="subway-dirrections">
+        <section class="subway-dirrections directions">
     		<h3>By Subway </h3>
     		<p>You can get to BMCC by taking any one of the following lines:</p>
             <ul class="directions-block">
@@ -92,7 +96,7 @@
     		<p class="check-info">Check the MTA's web site for the latest information.</p>
 		</section>
 
-        <section class="bus-dirrections">
+        <section class="bus-dirrections directions">
 
     		<h3>By Bus</h3>
             <ul class="directions-block">
@@ -103,7 +107,7 @@
             
     	</section>
     
-        <section class="path-dirrections">
+        <section class="path-dirrections directions clear">
     		<h3>By PATH</h3>
             <ul class="directions-block">
     		<li class="direction-a"><span>Path Train to World Trade Center</span><br>
@@ -117,7 +121,7 @@
             </ul>
     	</section>
     
-        <section class="car-dirrections">
+        <section class="car-dirrections directions">
     		<h3>By Car</h3>
             <ul class="directions-block">
     		<li class="direction-a"><span>Driving From East Side Highway</span><br>
@@ -137,24 +141,18 @@
 	
 	</main>
 	
-	<footer>
-
-        <a name="main_nav"></a> 
-            <nav id="main_nav" >
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="schedule.html">Schedule</a></li>
-                  <li><a href="sessions.html">Sessions</a></li>
-                  <li><a href="speakers.html">Speakers</a></li>
-                  <li><a href="videos.html">Videos</a></li>
-                  <li><a href="#top" class="top">Top</a></li>
-              </ul>
-            </nav><!--end main_nav -->  
-                  
+	<footer class="clear">
+        <nav id="footer_nav">
+            <ul>
+                <li><a href="#top"><img src="images/circle-up.png"></a>
+                </li>
+            </ul>
+        </nav>
+        <!--end main_nav -->                
         <div class="footer-info"><p>&copy; 2014 BMCC. All Rights Reserved</p>
         <a href="createdby.html">Created by Viktoriia Pshenychko</a></div>
     </footer>
-
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/main.js"></script>
     </body>
 </html>

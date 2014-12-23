@@ -1,0 +1,308 @@
+$primary-font: 'Open Sans', sans-serif;
+$headlines-font: 'Francois One', sans-serif;
+body {
+	font-family: $primary-font;
+	line-height: $primary-line-height;
+	font-weight: 400;
+	width: 100%;
+	margin: 0 auto;
+}
+
+main {
+padding: 1em;
+}
+
+a {
+color: #01A2A6;
+text-decoration: none;
+}
+
+.logo img{
+	width: 80%;
+	height: 80%;
+}
+
+.logo {
+	text-align: center;
+	padding: 1em;
+}
+
+
+
+/*NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION*/
+
+/* ============================
+* NAVIGATION 
+* Modified from: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/a-simple-responsive-mobile-first-navigation/
+* =============================*/  
+
+@mixin verticalNav{
+  clear:both;
+    
+    ul{
+      list-style: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        
+    }
+    
+    li a{
+      display:block;
+      color:#fff;
+        text-align: center;
+      background-color: #555;
+      text-transform: uppercase;
+      padding: 0.625em; /* 10/16 */
+      text-decoration:none;
+      border-bottom: 1px solid #eee;
+      font-weight:900;
+    }
+    
+    li a:hover{
+      color:#454545;
+      background-color: #fff;
+    }
+      
+    li a:active{
+      color:#555;
+      background-color: #01A2A6;
+    }  
+    
+    #menu-button {
+    position: absolute;
+}
+}//end verticalNav Mixin
+
+
+@mixin horizontalNav{
+        overflow:hidden;
+        background-color: #555; 
+        
+        li{
+            display:inline;
+            line-height:1em;
+        }
+        
+        li a{
+            float:left;
+            padding: 0.9375em; /* 10/16  and  15/16 */
+            border-bottom: none;
+        }   
+        
+        /* hide the link to top in the nav */
+        li a.top{
+//            display: none;
+        }
+}//end horizontalNav
+  
+#main_nav{
+  @include verticalNav;
+
+  display:none; /*hidden to start */
+}//end main_nav  
+
+#footer_nav{
+  @include verticalNav;
+}
+
+/* menu button */
+#menu-button {
+//    margin-bottom:1em;
+    
+    a{
+//          padding:0.5em 0.625em; /*10/16 */
+          background-color: #555;
+//          border-radius:5px;
+          color: #fff;
+        position: absolute;
+        z-index: 100;
+          text-decoration:none;
+    }
+          
+    a:hover{
+         color:#555;
+         background-color: #f90;
+    }
+}//end .menu
+
+
+/* ==========================
+*  Media Queries for Main Nav
+*  ========================== */
+/* these don't have to be separate. We did so for two reasons:
+1. Easy to copy and paste this into new design
+2. Depending on your site you may need separate break points for the nav. You may want to see what width is needed to fit your nav horizontally without breaking and use that as the breakpoint. 
+
+It should also be noted that there is only one media query because this CSS moves the nav to the top where it can stay for all of the other sizes.
+*/    
+
+/* 656 / 16 */
+
+@include respond-to(medium){
+    /* hide the menu button */
+    .menu{
+	      display:none;
+    }
+    
+   
+    #main_nav{
+       /* move main_nav to top of the screen */
+//      position:absolute;
+      top:0px;
+      left:0px;
+      width:100%;
+ 
+//      display:block; //show nav, hiding earlier
+
+      //style it horizontally
+      @include horizontalNav;
+
+    }//end #main_nav
+    
+    /* move the rest of the page down accordingly */
+    .container{
+//        margin-top: 3.75em;  /*60 / 16 */ 
+    }
+      
+    #footer_nav{
+      background-color:#fff;
+      }
+  
+} //end nav breakpoint
+
+
+.footer_nav li a{
+//        color: #fff;
+      background-color: #454545;
+    }
+
+
+
+
+/*NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION*/
+
+
+header {
+    background-color: #454545;
+}
+
+header h1 {
+color: #fff;
+padding: 1em;
+font-size: 1.8em;
+    padding-top: 2em;
+text-align: center
+}
+
+footer {
+text-align: center;
+color: #fff;
+}
+
+footer p {
+padding-top: 1em;
+}
+
+.footer-info {
+	padding-bottom: 1em;
+}
+
+footer {
+    background-color: #454545;
+}
+
+.time {
+	font-style: italic;
+	margin-bottom: 1em;
+	font-weight: 400;
+	line-height: 2em;
+	text-align: center;
+}
+
+p {
+	padding-bottom: 1em;
+}
+
+.opening-hours-info h3{
+	margin-bottom: 1em;
+}
+
+.closing-hours-info h3{
+margin-bottom: 1em;
+}
+
+.lunch-info h3{
+margin-bottom: 1em;
+}
+
+.lunch-info {
+	text-align: center;
+}
+
+.session h3 {
+	font-size: 1em;
+}
+
+.session h4 {
+    font-size: 1em;
+	font-style: italic;
+	padding-bottom: 1em;
+	font-weight: 400;
+}
+
+.section-name  {
+	font-weight: bold;
+}
+
+.room-num {
+	font-size: 0.8em;
+}
+
+.session li {
+	padding-bottom: 1em;
+	list-style-type: none;
+}
+
+.map {
+	text-align: center;
+}
+
+.my-info {
+	padding: 1em;
+}
+
+.my-info-image {
+	float: left;
+	width: 150px;
+	margin-right: 1em;
+}
+
+.clear {
+	clear: both;
+}
+
+.my-info-description a {
+	color: #04BFBF;
+}
+
+.workshop-tracks img{
+	/*width: 100px;*/
+	padding-right: 1em;
+	float: left;
+}
+
+
+
+.opening-remarks-line {
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+#createdby footer {
+    margin-top: 600px;
+}
+
+footer {
+margin-top: 2em;
+}

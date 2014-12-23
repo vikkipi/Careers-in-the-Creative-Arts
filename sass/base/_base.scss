@@ -1,0 +1,24 @@
+/* They styles in the following are similar to the effect of a reset but have be separated out so that it is easier to add default styles.  These are suggested styles that the designer should change and add to set the typography 
+
+
+
+Much of this is modified from two original sources
+HTML 5 Doctor Reset: http://html5doctor.com/html-5-reset-stylesheet/
+This is in the public domain. It has been modified to remove things redundant with Normalize and separate out styles that may need to be styled separately.
+
+Normalize.css: git.io/normalize 
+The version modified is: normalize.css v3.0.1 | MIT License
+A few pieces of normalize.css that more directly affected typographic choices (such as font-family) were moved here so normalize.css could be more or less left alone.
+*/
+
+/*The following 7 lines are from Paul Irish and apply a border-box model. 
+See this page for more info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@import "typography";

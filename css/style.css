@@ -1,3 +1,388 @@
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+/* 
+====================================
+Modified Normalize.css Code 
+
+This is a modified version of normalize.css
+It has been modified to remove some of the choices such as font-family, that a designer should make. Most of what is taken out is added in a separate starter stylesheet meant to be used in combination with this version of normalize.css
+====================================
+*/
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+html {
+  /*  font-family: sans-serif;  1 */
+  /* Removed in order to allow designer to set the default fonts */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/*Commented out so that typography set by designer all at once.*/
+/*
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+*/
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /*two font names are needed to fix the bug. If you add the same twice then it compresses better on gzip */
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
 /* They styles in the following are similar to the effect of a reset but have be separated out so that it is easier to add default styles.  These are suggested styles that the designer should change and add to set the typography 
 
 
@@ -10,244 +395,913 @@ Normalize.css: git.io/normalize
 The version modified is: normalize.css v3.0.1 | MIT License
 A few pieces of normalize.css that more directly affected typographic choices (such as font-family) were moved here so normalize.css could be more or less left alone.
 */
-
 /*The following 7 lines are from Paul Irish and apply a border-box model. 
 See this page for more info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 
 /*
 Set a default font-family, font-size and line-height in the body
 This will set the default for the entire site.
 */
-body{
-    font-family: sans-serif; /*change to add a proper font stack */
-    font-size: 100%;
-    line-height: 1; /* usually something between 1.3 and 1.6 is most readable without feeling too far apart */
-}
-
 /*Usually at least a bottom margin is given to separate paragraphs. font-size and font-family are inherited from body*/
-p{
-    margin: 0 0 0 0;
+p {
+  margin: 0 0 0 0;
 }
 
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
+html {
+  font-size: 1em;
+}
 
-b,
-strong {
+body {
+  background-color: white;
+  font-family: 'FrancoisOne', serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+/*p {margin-bottom: 1.3em;}*/
+/*h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 6.854em;
+}
+
+h2 {font-size: 4.236em;}
+
+h3 {font-size: 2.618em;}
+
+h4 {font-size: 1.618em;}
+
+
+
+small, .font_small {font-size: 0.618em;}*/
+h1, h2, h4, h5, h6 {
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  color: #262626;
+  padding: 0.5em;
+}
+
+h2 {
+  color: #262626;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Francois One", sans-serif;
+  color: #ffffff;
+  background-color: #3F3D73;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.2em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+h5 {
+  font-variant: small-caps;
+}
+
+/*@import "mixin";*/
+@media only screen and (min-width: 30em) {
+  .speaker-front-page {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .speaker-front-page img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .speaker {
+    width: 100%;
+    padding: 0 10px;
+    float: left;
+  }
+}
+@media only screen and (min-width: 40em) {
+  .logo {
+    height: auto;
+    width: 25em;
+    background-color: #454545;
+  }
+
+  .speaker-front-page img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .date {
+    padding-top: 2em;
+  }
+
+  .workshop {
+    margin-top: 4em;
+  }
+
+  .featured-speakers {
+    margin-bottom: 2em;
+  }
+
+  .note-section {
+    width: 33.33333%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .speaker-front-page {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .speaker-front-page h3 {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .speaker {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .speaker-three speaker-one {
+    clear: both;
+  }
+
+  .schedule-info {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .session {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .video-track {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .track .fine-arts .session-3 {
+    clear: both;
+  }
+
+  .track .media-arts .session-3 {
+    clear: both;
+  }
+
+  .featured-speakers img {
+    display: block;
+  }
+
+  .anouncement {
+    display: table;
+    background-color: #01A2A6;
+  }
+}
+@media only screen and (min-width: 50em) {
+  .logo {
+    height: auto;
+    width: 25em;
+    background-color: #454545;
+  }
+
+  .note-section {
+    width: 33.33333%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .date {
+    padding-top: 2em;
+  }
+
+  .map {
+    height: 50%;
+  }
+
+  .speaker {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  #speakers .speaker:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  .speaker-front-page img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .speaker-front-page {
+    width: 25%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .directions {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .about-conf {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .schedule-info {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .schedule-info-1 {
+    width: 33.33333%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .workshop {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .video-track {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .box {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  box1 {
+    clear: both;
+  }
+
+  .box3 {
+    clear: both;
+  }
+
+  .box {
+    display: table-cell;
+    width: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .box {
+    position: relative;
+    padding-bottom: 5em;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .track-wrapper {
+    margin-bottom: 1em;
+  }
+
+  .track-wrapper h2 {
+    float: none;
+  }
+
+  .anouncement {
+    display: table;
+    background-color: #01A2A6;
+  }
+
+  .speakers-title {
+    overflow: auto;
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  .box {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+
+  .logo {
+    height: auto;
+    width: 25em;
+    background-color: #454545;
+  }
+
+  .anouncement {
+    display: table;
+    background-color: #01A2A6;
+  }
+
+  note-section {
+    display: table-cell;
+  }
+
+  .menu {
+    float: right;
+  }
+
+  .note-section {
+    width: 33.33333%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .speaker-front-page img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .workshop-tracks {
+    display: block;
+    margin-top: 2em;
+    height: auto;
+  }
+
+  .fine-arts .session-3 {
+    clear: none;
+  }
+
+  .media-arts .session-3 {
+    clear: none;
+  }
+
+  .about-conf {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .schedule-info {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .schedule-info-1 {
+    width: 33.33333%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .workshop {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .video-track {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .boxes {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+
+  .box {
+    display: table-cell;
+    width: 25%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .box {
+    position: relative;
+    padding-bottom: 5em;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .speakers-title {
+    clear: both;
+  }
+
+  #main_nav ul {
+    float: right;
+  }
+
+  .current {
+    color: #01A2A6;
+  }
+
+  #speakers footer {
+    margin-top: 2em;
+  }
+
+  .speakers-title {
+    overflow: auto;
+    margin-bottom: 2em;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img, video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 20px;
+  font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  padding: 1em;
+}
+
+a {
+  color: #01A2A6;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 80%;
+  height: 80%;
+}
+
+.logo {
+  text-align: center;
+  padding: 1em;
+}
+
+/*NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION*/
+/* ============================
+* NAVIGATION 
+* Modified from: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/a-simple-responsive-mobile-first-navigation/
+* =============================*/
+#main_nav {
+  clear: both;
+  display: none;
+  /*hidden to start */
+}
+#main_nav ul {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+#main_nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background-color: #555;
+  text-transform: uppercase;
+  padding: 0.625em;
+  /* 10/16 */
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 900;
+}
+#main_nav li a:hover {
+  color: #454545;
+  background-color: #fff;
+}
+#main_nav li a:active {
+  color: #555;
+  background-color: #01A2A6;
+}
+#main_nav #menu-button {
+  position: absolute;
+}
+
+#footer_nav {
+  clear: both;
+}
+#footer_nav ul {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+#footer_nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background-color: #555;
+  text-transform: uppercase;
+  padding: 0.625em;
+  /* 10/16 */
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 900;
+}
+#footer_nav li a:hover {
+  color: #454545;
+  background-color: #fff;
+}
+#footer_nav li a:active {
+  color: #555;
+  background-color: #01A2A6;
+}
+#footer_nav #menu-button {
+  position: absolute;
+}
+
+/* menu button */
+#menu-button a {
+  background-color: #555;
+  color: #fff;
+  position: absolute;
+  z-index: 100;
+  text-decoration: none;
+}
+#menu-button a:hover {
+  color: #555;
+  background-color: #f90;
+}
+
+/* ==========================
+*  Media Queries for Main Nav
+*  ========================== */
+/* these don't have to be separate. We did so for two reasons:
+1. Easy to copy and paste this into new design
+2. Depending on your site you may need separate break points for the nav. You may want to see what width is needed to fit your nav horizontally without breaking and use that as the breakpoint. 
+
+It should also be noted that there is only one media query because this CSS moves the nav to the top where it can stay for all of the other sizes.
+*/
+/* 656 / 16 */
+@media only screen and (min-width: 50em) {
+  /* hide the menu button */
+  .menu {
+    display: none;
+  }
+
+  #main_nav {
+    /* move main_nav to top of the screen */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #555;
+    /* hide the link to top in the nav */
+  }
+  #main_nav li {
+    display: inline;
+    line-height: 1em;
+  }
+  #main_nav li a {
+    float: left;
+    padding: 0.9375em;
+    /* 10/16  and  15/16 */
+    border-bottom: none;
+  }
+
+  /* move the rest of the page down accordingly */
+  #footer_nav {
+    background-color: #fff;
+  }
+}
+.footer_nav li a {
+  background-color: #454545;
+}
+
+/*NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION*/
+header {
+  background-color: #454545;
+}
+
+header h1 {
+  color: #fff;
+  padding: 1em;
+  font-size: 1.8em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+}
+
+footer p {
+  padding-top: 1em;
+}
+
+.footer-info {
+  padding-bottom: 1em;
+}
+
+footer {
+  background-color: #454545;
+}
+
+.time {
+  font-style: italic;
+  margin-bottom: 1em;
+  font-weight: 400;
+  line-height: 2em;
+  text-align: center;
+}
+
+p {
+  padding-bottom: 1em;
+}
+
+.opening-hours-info h3 {
+  margin-bottom: 1em;
+}
+
+.closing-hours-info h3 {
+  margin-bottom: 1em;
+}
+
+.lunch-info h3 {
+  margin-bottom: 1em;
+}
+
+.lunch-info {
+  text-align: center;
+}
+
+.session h3 {
+  font-size: 1em;
+}
+
+.session h4 {
+  font-size: 1em;
+  font-style: italic;
+  padding-bottom: 1em;
+  font-weight: 400;
+}
+
+.section-name {
   font-weight: bold;
 }
 
-/* links and visited links have default colors and underline */
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    color:inherit;
-    text-decoration: none; /*this controls if the underline is showing */
-    
-    /* some people choose to use a bottom border in place of an underline because it doesn't cut through the descenders in letters like gyjp */
-    /* border-bottom: 1px solid #000; */
+.room-num {
+  font-size: 0.8em;
 }
 
-a:hover{
-    color:inherit;
-    /* if you set bottom-border on a{} above then remember to change the color here */
-    /* border-bottom: 1px solid #000; */
+.session li {
+  padding-bottom: 1em;
+  list-style-type: none;
 }
 
-/* it can help with usability if you give visited links a diffefrent color than unvisited ones (even if just a different shade)*/
-a:visited{
-    color:inherit;
-    
-    /* Again, if you set bottom-border on a{} then remember to change the color here too*/
-    /* border-bottom: 1px solid #000; */
+.map {
+  text-align: center;
 }
 
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #000;
-    margin:0 0;
-    padding:0;
+.my-info {
+  padding: 1em;
 }
 
-/*Set a default font-family for the headings*/
-h1,h2,h3,h4,h5,h6{
-    font-family: serif; /*change to add a proper font stack */
+.my-info-image {
+  float: left;
+  width: 150px;
+  margin-right: 1em;
 }
 
-/*
-Set the font-size of each heading individually
-When you set the font-size also set the line-height.
-You may also want to set the top and bottom margins and padding
-*/
-h1{
-    font-size:100%;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
+.clear {
+  clear: both;
 }
 
-h2{
-    font-size:100%;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
+.my-info-description a {
+  color: #04BFBF;
 }
 
-h3{
-    font-size:100%;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
+.workshop-tracks img {
+  /*width: 100px;*/
+  padding-right: 1em;
+  float: left;
 }
 
-h4{
-    font-size:100%;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
+.opening-remarks-line {
+  text-align: center;
+  padding-bottom: 1em;
 }
 
-h5{
-    font-size:100%;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
+#createdby footer {
+  margin-top: 600px;
 }
 
-h6{
-    font-size:100%;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
+footer {
+  margin-top: 2em;
 }
 
-/* 
-Some browsers use margin-left and some padding-left to indent the list. Pick which one you like (or both) and change them here
-*/
-ul, ol{
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+.check-info {
+  font-size: 0.8em;
+  font-style: italic;
 }
 
-/* Set the space between items in a list, usually done with margin-bottom */
-li{
-    margin-bottom: 0;
+.directions-block {
+  margin-left: 5%;
 }
 
-/*Setting the overall list margin or padding will also effect your nav so make sure you set that specifically.
-You can add other nav styling here if you like such as removing the bullets with list-style none.
-only ul is give here because ol is generally not used with nav
-*/
-nav ul {
-    margin-left:0;
-    padding-left:0;
-    list-style:none;
+.directions-block li {
+  margin-bottom: 5%;
 }
 
-nav ul li{
-    margin-bottom: 0; /* adding a margin-bottom setting to li elements can help make them readable */
+.time {
+  margin-bottom: 0em;
 }
 
-/*
-definition lists may be given a top and bottom margin by default (dl element)
-and the definition itself (dd element) is usually indented by default with margin-left or padding-left;
-*/
-
-dl{
-    margin: 0 0 0 0;
+.map {
+  position: relative;
+  /* 
+  Do math with the height of your iframe divided by the width, then converted to percent
+  In this example the height is 400 and the width is 600
+  400 / 600 = .66666667 
+  which is 66.6666667% */
+  padding-bottom: 66.6666667%;
+  height: 0;
 }
 
-dd{
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
 }
 
-
-/*blockquotes are set off by default using margins or padding.*/
-blockquote{
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-/* this removes any quotes a browser might add to blockquote */
-blockquote, q {
-    quotes:none;
+.about-info a {
+  color: #04BFBF;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+.note {
+  padding: 1em 1em 0em 1em;
+  margin-bottom: 1em;
+  /*margin: 2em auto;*/
+  color: #262626;
+  background: #01A2A6;
+  overflow: hidden;
 }
 
-
-/*figure are set off by default using margins or padding.*/
-figure{
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+.date {
+  text-align: center;
 }
 
-
-/* Table styling */
-
-/* often you will want to do something with table rows to help users read the table. Bottom borders or alternating background colors are examples */
-tr{
-    
+.featured-speakers .speaker {
+  margin-bottom: 10%;
 }
 
-/* Normalize removes all of the padding in tables. you may want to add some to table cells  */
-th{
-    
+.speaker-front-page a img {
+  display: block;
+  margin: 0 auto;
 }
 
-td{
-    
+.speaker-front-page h3 {
+  width: 100%;
+  text-align: center;
+  padding: 0.2em;
+  font-size: 1em;
 }
 
-
-/* Form styling */
-/* because form styling is highly dependent on the individual site no suggestions are given here. Normalize.css does have a number of styles that help give a consistent baseline across browsers.
-
-/*
----------------------------------------------------------
-Lesser used elements.
-These give some possible styles for lesser used elements. You can delete this section if you know you are not using them
----------------------------------------------------------
-*/
-
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+.intro span {
+  font-style: italic;
 }
 
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
+.date p {
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
 }
 
-del {
-    text-decoration: line-through;
+.date-address p {
+  padding: 1em;
+  padding-bottom: 0em;
+  margin-bottom: 1em;
+  background-color: #29D9C2;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+.address p {
+  text-transform: uppercase;
 }
+
+.workshop-tracks {
+  clear: both;
+  margin-top: 2em;
+}
+
+.workshop {
+  margin-top: 2em;
+}
+
+.note-section {
+  padding: 1em 1em 0em 1em;
+  /*margin: 2em auto;*/
+  color: #262626;
+  background: #01A2A6;
+}
+
+#home footer {
+  margin-top: 3em;
+}
+
+.opening-remarks {
+  text-align: center;
+}
+
+.session li img {
+  float: left;
+  padding-right: 1em;
+}
+
+.speakers-title {
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+.speaker img {
+  display: inline;
+  float: left;
+  margin-right: 1em;
+}
+
+.speaker p {
+  display: inline;
+}
+
+#speakers footer {
+  margin-top: 2em;
+}
+
+footer {
+  clear: both;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 5%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videos-of-professors a {
+  color: #04BFBF;
+}
+
+/*# sourceMappingURL=style.css.map */
